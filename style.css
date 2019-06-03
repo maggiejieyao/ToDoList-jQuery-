@@ -1,0 +1,119 @@
+body{
+    font-family: 'Indie Flower', cursive;
+}
+#container{
+    margin-top: 8%;
+}
+
+.toDoList #in{
+    border-radius: 30px;
+    width: 50%;
+}
+
+.toDoList #addBtn{
+    color: #585858;
+    border-radius: 50px;
+}
+
+.toDoList #alertMess{
+    color: #a88a8a;
+}
+
+#removeAll{
+    color: #585858;
+    border-radius: 10px;
+}
+#removeAll i{
+    font-size: 1em;
+}
+/*funny icon effect*/
+#slogan{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    color: gray;
+}
+
+svg {
+  width:4%;
+  max-width:250px;
+  height:auto;
+  transform:rotateZ(0deg);
+}
+.smile, .eyes {
+  stroke:#C0C0C0;
+  stroke-width:1.2;
+  stroke-linecap:round;
+  fill:transparent;
+}
+svg:hover{animation:rotate 1.2s cubic-bezier(0.65, 0.000, 0.75, 1.000);}
+svg:hover .smile{animation: smile 1s cubic-bezier(0.2, 0.000, 0.8, 1.000);}
+svg:hover .eyes{animation: eyes 1s cubic-bezier(.7, 0.000, 0.4, 1.000);}
+
+@keyframes rotate { to { transform:rotateZ(720deg); } }
+@keyframes smile { 50% { stroke-dasharray:20,5.1327;} }
+@keyframes eyes  { 70% { stroke-dasharray:1,0,.5,23.6327;} }
+
+/*list css*/
+ul{
+    list-style-type: none;
+}
+
+#in:focus, button:focus{
+    outline: none;
+}
+
+/*checkbox css*/
+#radio{
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+
+#radio:checked::before{
+     position: absolute;
+     left: 10px;
+     top: 3px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+
+#radio:hover{
+    background-color: lightgray;
+}
+
+#radio:checked{
+    background-color: lightgray;
+}
+
+.labelCon{
+    font-size: 1.5em;
+    color: #585858;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label.labelCon{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
