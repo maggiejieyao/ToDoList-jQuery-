@@ -1,2 +1,3 @@
 # ToDoList-jQuery
-Simple todo list 
+Find the demo here: 
+https://maggiejieyao.github.io/ToDoList-jQuery-/ 
